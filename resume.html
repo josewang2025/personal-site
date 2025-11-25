@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Resume and professional background of Joseph (Jiuliang) Wang, Product & ML Data Scientist." />
+  <title>Resume | Joseph (Jiuliang) Wang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-left">Joseph (Jiuliang) Wang</div>
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-section">
+  <h1>Resume</h1>
+  
+  <h2>Professional Summary</h2>
+  <p>Product & ML Data Scientist with expertise in building practical ML systems, e-commerce intelligence pipelines, and end-to-end analytics solutions. Specialized in turning data, machine learning, and AI workflows into actionable business decisions.</p>
+
+  <h2>Core Skills</h2>
+  <ul>
+    <li><strong>Programming & Tools:</strong> Python, SQL, R, Git, Jupyter, VS Code</li>
+    <li><strong>Machine Learning:</strong> Scikit-learn, XGBoost, TensorFlow, PyTorch, Prophet, ARIMA, LSTM</li>
+    <li><strong>Data Science:</strong> Statistical modeling, NLP, time series forecasting, A/B testing, experimentation</li>
+    <li><strong>AI Automation:</strong> Cursor, n8n, Lovable, agentic workflows, automation pipelines</li>
+    <li><strong>Visualization & BI:</strong> Tableau, PowerBI, Matplotlib, Seaborn, Plotly</li>
+    <li><strong>E-commerce:</strong> Shopify analytics, pricing optimization, customer segmentation, RFM analysis</li>
+    <li><strong>Data Engineering:</strong> Data modeling, ETL pipelines, database design, API integration</li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Northwestern University</strong> — Master of Science in Data Science</li>
+    <li><strong>University of Waterloo</strong> — Bachelor of Mathematics, Double Major in Statistics & Actuarial Science</li>
+  </ul>
+
+  <h2>Areas of Expertise</h2>
+  <ul>
+    <li>E-commerce intelligence and analytics</li>
+    <li>Machine learning model development and deployment</li>
+    <li>AI automation and workflow design</li>
+    <li>Data strategy and advisory</li>
+    <li>Predictive modeling and forecasting</li>
+    <li>Customer analytics and segmentation</li>
+    <li>Business intelligence and reporting</li>
+  </ul>
+
+  <p style="margin-top: 32px;"><a href="contact.html" class="btn-primary">Get in Touch</a></p>
+</section>
+
+<footer><p>© 2025 Joseph (Jiuliang) Wang • All Rights Reserved</p></footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-right a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

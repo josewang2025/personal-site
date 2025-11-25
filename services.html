@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Data science consulting services by Joseph (Jiuliang) Wang: e-commerce intelligence, ML solutions, AI automation, and data strategy." />
+  <title>Services | Joseph (Jiuliang) Wang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-left">Joseph (Jiuliang) Wang</div>
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-section">
+  <h1>Consulting & Services</h1>
+  <p>I partner with founders, product teams, and operators to design, build, and ship data & AI solutions that actually get used — not just live in a notebook. Here's how I can help:</p>
+  
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>E-commerce Intelligence</h3>
+      <p>Comprehensive analytics solutions including dynamic pricing optimization, demand forecasting, customer segmentation, retention analysis, and custom KPI dashboards tailored for your store or marketplace.</p>
+    </div>
+    
+    <div class="service-card">
+      <h3>ML Solutions</h3>
+      <p>End-to-end machine learning pipelines for prediction, experimentation, and decision support. From data modeling to deployment-ready insights, I build ML systems that integrate seamlessly into your business workflows.</p>
+    </div>
+    
+    <div class="service-card">
+      <h3>AI Automation</h3>
+      <p>Workflows powered by Cursor, n8n, Lovable, and custom agents to automate reporting, monitoring, and business processes. Reduce manual work and increase efficiency with intelligent automation.</p>
+    </div>
+    
+    <div class="service-card">
+      <h3>Data Strategy & Advisory</h3>
+      <p>Help you prioritize use cases, define metrics, and design a practical roadmap for data, experimentation, and AI inside your business. Strategic guidance to maximize the value of your data investments.</p>
+    </div>
+  </div>
+  
+  <p style="margin-top: 40px; text-align: center;"><a href="contact.html" class="btn-primary">Let's Discuss Your Project</a></p>
+</section>
+
+<footer><p>© 2025 Joseph (Jiuliang) Wang • All Rights Reserved</p></footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-right a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Featured data science and machine learning projects by Joseph (Jiuliang) Wang, including e-commerce analytics, ML systems, and AI solutions." />
+  <title>Projects | Joseph (Jiuliang) Wang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-left">Joseph (Jiuliang) Wang</div>
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-section">
+  <h1>Featured Projects</h1>
+  <p>Here are some of my recent data science and machine learning projects, showcasing practical applications in e-commerce, forecasting, NLP, and analytics.</p>
+  
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Shopify Pricing Optimization</h3>
+      <p>Dynamic ML pricing engine using XGBoost to optimize product pricing based on demand, competition, and market conditions. Delivered measurable revenue impact through data-driven pricing strategies.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>Demand Forecasting</h3>
+      <p>Comprehensive forecasting experiments using Prophet, ARIMA, and LSTM models to predict product demand, optimize inventory, and reduce stockouts. Evaluated model performance across multiple time horizons.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>NLP Review Intelligence</h3>
+      <p>Sentiment analysis, topic modeling, and keyword extraction from customer reviews. Built automated insights pipeline to surface actionable feedback and product improvement opportunities.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>RFM Segmentation</h3>
+      <p>Full customer lifecycle analysis using Recency, Frequency, and Monetary value segmentation. Developed targeted marketing strategies and retention programs based on customer behavior patterns.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>A/B Testing Framework</h3>
+      <p>Statistical evaluation of experiments including Cookie Cats game analysis. Designed robust testing methodologies to measure impact and make data-driven product decisions.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>Kaggle Competitions</h3>
+      <p>Collection of regression, classification, and forecasting projects. Applied advanced ML techniques to real-world datasets, achieving competitive results and learning best practices.</p>
+    </div>
+  </div>
+  
+  <p style="margin-top: 40px; text-align: center;"><a href="contact.html" class="btn-secondary">Interested in a similar project? Get in touch</a></p>
+</section>
+
+<footer><p>© 2025 Joseph (Jiuliang) Wang • All Rights Reserved</p></footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-right a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

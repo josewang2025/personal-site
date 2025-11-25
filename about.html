@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Joseph (Jiuliang) Wang, a Product & ML Data Scientist with expertise in e-commerce analytics, machine learning systems, and AI automation." />
+  <title>About | Joseph (Jiuliang) Wang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-left">Joseph (Jiuliang) Wang</div>
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-section">
+  <h1>About Me</h1>
+  
+  <p>I'm a Product & Machine Learning Data Scientist passionate about turning data into actionable insights and building ML systems that drive real business value.</p>
+  
+  <h2>Background</h2>
+  <p>I hold a <strong>Master of Science in Data Science from Northwestern University</strong> and a <strong>Bachelor of Mathematics with a double major in Statistics and Actuarial Science from the University of Waterloo</strong>. My academic foundation combines rigorous statistical methods with practical machine learning applications.</p>
+  
+  <h2>What I Do</h2>
+  <p>I specialize in building practical ML systems, e-commerce intelligence pipelines, and end-to-end analytics solutions. My work spans:</p>
+  <ul>
+    <li><strong>Machine Learning:</strong> Pricing optimization, demand forecasting, customer segmentation, NLP, and experimentation frameworks</li>
+    <li><strong>E-commerce Intelligence:</strong> Shopify analytics, customer insights, product decision support, and KPI dashboards</li>
+    <li><strong>AI Automation:</strong> Workflows using Cursor, n8n, Lovable, and custom agentic pipelines</li>
+    <li><strong>Data Strategy:</strong> Helping teams prioritize use cases, define metrics, and design practical roadmaps for data and AI adoption</li>
+  </ul>
+  
+  <h2>My Approach</h2>
+  <p>I believe in building solutions that actually get used — not just live in a notebook. I partner with founders, product teams, and operators to design, build, and ship data & AI solutions that integrate seamlessly into business workflows and drive measurable impact.</p>
+  
+  <p>Whether you're an e-commerce brand looking to optimize pricing, a SaaS company needing better analytics, or an AI team seeking automation solutions, I'm here to help you leverage data science and machine learning to achieve your goals.</p>
+</section>
+
+<footer><p>© 2025 Joseph (Jiuliang) Wang • All Rights Reserved</p></footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-right a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

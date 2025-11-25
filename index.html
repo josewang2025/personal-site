@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Joseph (Jiuliang) Wang - Product & ML Data Scientist specializing in e-commerce analytics, machine learning systems, and AI automation for real business impact." />
+  <meta name="keywords" content="data scientist, machine learning, e-commerce analytics, AI consultant, ML systems, data science" />
+  <title>Joseph (Jiuliang) Wang | Product & ML Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-left">Joseph (Jiuliang) Wang</div>
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero hero-split">
+  <div class="hero-photo">
+    <img src="joseph-hero.png"
+         alt="Portrait of Joseph (Jiuliang) Wang, Product & ML Data Scientist">
+  </div>
+
+  <div class="hero-content">
+    <h1>Product & ML Data Scientist & AI Consultant</h1>
+    <h2>E-commerce Analytics, ML Systems & Automation for Real Business Impact</h2>
+
+    <p>
+      I help e-commerce and digital businesses turn data, machine learning, and AI workflows
+      into practical decisions — from pricing and forecasting to customer intelligence and
+      automated reporting.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn-primary" href="projects.html">View Featured Projects</a>
+      <a class="btn-secondary" href="services.html">See Consulting Services</a>
+    </div>
+
+    <p class="hero-tags">
+      Helping: <span>E-commerce brands</span> • <span>SaaS & digital products</span> • <span>AI & analytics teams</span>
+    </p>
+
+    <div class="hero-social">
+      <a href="https://www.linkedin.com/in/joseph-wang-9a1569ab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/josewang2025" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:joseph@josephjwang.com">Email</a>
+      <a href="tel:+12263388582">Phone</a>
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="highlight-card"><h3>Machine Learning</h3><p>Pricing, forecasting, segmentation, NLP, experimentation.</p></div>
+  <div class="highlight-card"><h3>AI Automation</h3><p>Cursor, n8n, Lovable workflows and agentic pipelines.</p></div>
+  <div class="highlight-card"><h3>E-commerce Intelligence</h3><p>Shopify analytics, customer insights, product decision support.</p></div>
+</section>
+
+<section class="home-services">
+  <h2>Consulting & Services</h2>
+  <p class="home-services-intro">
+    I partner with founders, product teams, and operators to design, build, and ship
+    data & AI solutions that actually get used — not just live in a notebook.
+  </p>
+
+  <div class="home-services-grid">
+    <div class="home-service-card">
+      <h3>E-commerce Intelligence</h3>
+      <p>
+        Pricing, demand forecasting, customer segmentation, retention analysis, and KPI
+        dashboards tailored for your store or marketplace.
+      </p>
+    </div>
+
+    <div class="home-service-card">
+      <h3>ML & Analytics Solutions</h3>
+      <p>
+        End-to-end ML pipelines for prediction, experimentation, and decision support —
+        from data modeling to deployment-ready insights.
+      </p>
+    </div>
+
+    <div class="home-service-card">
+      <h3>AI Automation & Agents</h3>
+      <p>
+        Workflows powered by Cursor, n8n, Lovable, and custom agents to automate
+        reporting, monitoring, and business processes.
+      </p>
+    </div>
+
+    <div class="home-service-card">
+      <h3>Data Strategy & Advisory</h3>
+      <p>
+        Help you prioritize use cases, define metrics, and design a practical roadmap
+        for data, experimentation, and AI inside your business.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<footer><p>© 2025 Joseph (Jiuliang) Wang • All Rights Reserved</p></footer>
+
+<script>
+  // Add scroll effect to navigation
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // Highlight active navigation link
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-right a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
